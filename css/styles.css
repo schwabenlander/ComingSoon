@@ -1,0 +1,160 @@
+@font-face {
+	font-family: "AdiHaus";
+	src: URL("https://assets.codepen.io/6060109/adihaus_regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "AdiHaus";
+	src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	background-color: #f1f1f1;
+	font-family: "AdiHaus";
+}
+
+body {
+	display: flex;
+}
+
+.all-container {
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#logo {
+	display: block;
+	padding: 1rem;
+	margin: auto;
+	padding: 32px;
+}
+
+#athlete-mobile {
+	background-image: url("https://assets.codepen.io/6060109/mobile-shoes.jpg");
+	height: 250px;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.text-content-container {
+	width: 100%;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 48px;
+	line-height: 50px;
+	letter-spacing: 5px;
+	color: #423a3a;
+}
+
+h1 + p {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 28px;
+	color: #333333;
+}
+
+.blue-keyword {
+	display: block;
+	color: #cd3a24;
+	padding-bottom: 0.3em;
+	color: #2f80ed;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 42px;
+}
+
+form {
+	margin-top: 2.5rem;
+	display: flex;
+	justify-content: center;
+}
+
+input[type="email"] {
+	margin: 0;
+	padding: 20px 30px;
+	width: 60%;
+	height: 48px;
+	opacity: 70%;
+	box-sizing: border-box;
+}
+
+input[type="submit"] {
+	margin: 0;
+	width: 64px;
+	height: 48px;
+	cursor: pointer;
+	box-sizing: border-box;
+	font-weight: 700;
+	font-size: 18px;
+	color: #ffffff;
+	border: none;
+	background: linear-gradient(135deg, #7c7c7c 0%, #2b2828 100%);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.desktop-image {
+	display: none;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	body {
+		background-image: url("https://assets.codepen.io/6060109/waves.png");
+		background-size: cover;
+	}
+
+	.all-container {
+		width: 60%;
+	}
+
+	.text-content-container {
+		text-align: left;
+	}
+
+	#athlete-mobile {
+		display: none;
+	}
+
+	#logo {
+		margin: 40px 0 150px 0;
+		padding: 0;
+	}
+
+	.desktop-image {
+		display: block;
+		width: 40%;
+		background-image: url("https://assets.codepen.io/6060109/shoes.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	h1 {
+		font-size: 64px;
+		line-height: 68px;
+	}
+
+	h1 + p {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 32px;
+		color: #333333;
+	}
+
+	form {
+		justify-content: left;
+	}
+}
